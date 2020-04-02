@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+const db = process.env.MONGODB_URL;
 
 const connectDB = async () => {
   try {
